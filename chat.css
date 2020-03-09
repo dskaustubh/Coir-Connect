@@ -1,0 +1,45 @@
+body{
+  background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Bootstrap related css */
+
+.message_send{
+  background-color:#C0C0C0;
+  margin-top: 3vh;
+  text-align: right;
+  width:100%;
+}
+
+.message_receive{
+  background-color:#F1F1F1;
+  margin-top: 3vh;
+  text-align: left;
+  width:100%;
+}
+
+
+textarea{
+    resize: none;
+    width:50vw;
+}
+
+@media screen and (max-width: 1400px) {
+  .con{
+    overflow: scroll;
+  }
+}
+
+.footer{
+  height:10vh;
+  width:100%;
+  background-color: #16a085;
+  bottom:0;
+  position: fixed;
+  text-align: center;
+  margin-top: 5vh;
+
+}

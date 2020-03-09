@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="farmer_login.css">
+  <title>Farmer_login</title>
+</head>
+       
+<body>
+
+  <!--nav bar  -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="images/logo.png" class="img-fluid img-thumbnail d-block ms-auto" height="40vh" width="60vw">
+      <a class="navbar-brand" href="index.html" style="margin-left:10vw;">Coir Industry Interconnect</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link btn btn-light" href="index.html" style="margin-left:8vw;">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-info" href="index.html#aboutus" style="color:#fff;margin-left:2vw;">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-info" href="index.html#contactus" style="color:#fff;margin-left:2vw;">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="margin-left:2vw;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+              Login
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item btn btn-warning button" id="psw_btn" href="change_psw.html" >change password</a>
+                          <div class="dropdown-divider us1"></div> 
+            <a class="dropdown-item btn btn-warning button us1"  style="width:auto;" id="notif" href="@notifications.html"    >Notification</a>
+            <div class="dropdown-divider us1"></div> 
+            <a class="dropdown-item btn btn-warning button us1"  style="width:auto;" id="accdel" href="accept_decline_farmer.html"    >Your Orders</a>
+                <div class="dropdown-divider"></div>  
+              <button  name="logout" class="dropdown-item btn btn-warning" id="logout_btn" >Logout</button>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- End of nav bar -->
+
+
+
+  <!-- Input details -->
+  <div class="container" style="margin-top:5vh;margin-bottom:5vh;">
+    <div class="form-group row">
+      <label for="pkg" class="col-sm-2 col-form-label" style="color:#FFF;">Price per KG</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="in_pkg" placeholder="Enter the price per KG" data-toggle="tooltip" data-placement="right" title="Price in Rs." >
+            <h5 id="alert_pkg"  style="color:red;text-align:left;margin:0;"></h5>
+
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Quantity/kg" class="col-sm-2 col-form-label" style="color:#FFF;">Quantity</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="in_q" placeholder="Enter the amount" data-toggle="tooltip" data-placement="right" title="Amount in Rs.">
+            <h5 id="alert_q"  style="color:red;text-align:left;margin:0;"></h5>
+
+        
+      </div>
+    </div>
+     <br><br>
+    <h5 id="alert_update" style="color:red;text-align:center;margin:0;"> </h5>
+
+    
+    <button name="update" id="update_btn" class="btn btn-info" style="text-align:center" >Update</button>
+    
+    <br><br>
+    <form id="form1" runat="server">
+  <input type='file' id="imgInp" />
+  <img id="blah" src="#" alt="your image" />
+</form>
+  </div>
+
+    
+  <!--End of input details -->
+<hr>
+
+
+  <!-- Table -->
+  <div class="container">
+  <table class="table table-striped" style="background-color:#F5F5F5;">
+  <thead>
+    <tr>
+      <th scope="col">Price/KG</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Total Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="pkg"></td>
+      <td id="q"></td>
+      <td id="tot"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+  <!-- End of table -->
+  
+  <!-- View transactions history -->
+    <div class="container" style="margin-bottom:10vh;">
+      <button type="button"  id="tr" class="btn btn-outline-info">View Transaction History</button>
+    </div>
+  <!-- End of  view transactions history -->
+  
+
+   <!-- footer -->
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-12 text-center footer">
+      <br>
+        <p>&copy @<a href="#" style="text-decoration:none;color:#fff;a:hover{opacity:0.6;}">www.Coirindustryinterconnect.com</a>
+          <span class="badge badge-pill badge-danger">Copyrighted</span>
+
+        </p>
+    </div>
+  </div>
+  </div>
+  <!-- End of footer -->
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function readURL(input) {
+
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('#blah').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#imgInp").change(function() {
+  readURL(this);
+});
+</script>
+<script src="farmer_login.js"></script>
+</html>

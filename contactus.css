@@ -1,0 +1,104 @@
+  body{
+  background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.outer{
+	height:100%;
+	width:auto;
+}	
+
+.main{
+  height: 111vh;
+  width: 46.8vw;
+  align:center;
+  font-family: Gill Sans Extrabold, sans-serif;
+}
+
+a:link,a:visited{
+  text-decoration: none;
+  color: #00e600;
+}
+
+a:hover{
+	opacity:0.6;
+}
+
+
+.header{
+  height: 14vh;
+  width: 46.8vw;
+  background-color: #fbfad3;
+  position:fixed;
+  top: 0;
+  left:26.07vw;
+  //bottom:0;
+  z-index:10;
+ 
+}
+
+.logo{
+  padding-top: 0.4625vh;
+  height: 8.325vh;
+  width: 10.4vw;
+  float: left;
+}
+
+.heading{
+  padding-top: 0.925vh;
+  height: 8.325vh;
+  width: 15.6vw;
+  font-family:Impact, Charcoal, sans-serif;
+  float: left;
+  text-align:right;
+}
+
+
+.menu{
+  height: 4.625vh;
+  width: 46.8vw;
+  opacity:0.8;
+
+}
+
+.up{
+	postion:relative;
+	postion:fixed;
+	bottom:50vh;
+	right:20vw;
+	height:10vh;
+	width:5vw;
+	float:right;
+}	
+
+.content{
+
+  //height: 87.875vh;
+  height: 96vh;
+  width: 46.8vw;
+  background-color: #c6e377;
+  position: relative;
+  top:15vh;
+}
+
+.left{
+	float:left;
+	height: 96vh;
+	width:23vw;
+	vertical-align:middle;
+}
+
+.right{
+	float:right;
+	height: 96vh;
+	width:23vw;
+}	
+.footer{
+  height: 9.25vh;
+  width: 46.8vw;
+  background-color: #729d39;
+  position: relative;
+  top:16.5vh;
+}

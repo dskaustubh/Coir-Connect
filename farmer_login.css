@@ -1,0 +1,35 @@
+   body{
+  background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Bootstrap related css */
+
+.rowheight{
+  height:15vh;
+  width:40vw;
+  margin-left: 15vw;
+  margin-right:15vw;
+  background-color: #9b59b6;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+}
+
+
+.content{
+  height:500vh;
+  background-color: #16a085;
+}
+
+a:hover{
+  opacity:0.6;
+}
+.footer{
+  background-color: #16a085;
+  bottom:0;
+  position: fixed;
+  height:10vh;
+}

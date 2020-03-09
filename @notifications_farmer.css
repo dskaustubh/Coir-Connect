@@ -1,0 +1,46 @@
+body{
+  background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Bootstrap related css */
+
+.content1{
+  margin-top:5vh;
+  margin-bottom:5vh;
+
+}
+ 
+.zoom {
+  padding: 3vh;
+  background-color: #F1F1F1;
+  transition: transform .2s;
+  height: 10vh;
+  margin-top: 1vh;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 1400px) {
+  .con{
+    overflow: scroll;
+  }
+}
+
+.footer{
+  height:10vh;
+  width:100%;
+  background-color: #16a085;
+  bottom:0;
+  position: fixed;
+  text-align: center;
+  margin-top: 5vh;
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="feedback.css">
+
+  <title>Feedback page</title>
+</head>
+
+<body>
+  <center>
+    <!--nav bar  -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="images/logo.png" class="img-fluid img-thumbnail d-block ms-auto" height="40vh" width="60vw">
+        <a class="navbar-brand" href="index.html" style="margin-left:10vw;">Coir Industry Interconnect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link btn btn-light" href="index.html" style="margin-left:8vw;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-info" href="index.html#aboutus" style="color:#fff;margin-left:2vw;">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-info" href="index.html#contactus" style="color:#fff;margin-left:2vw;">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="margin-left:2vw;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Login
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+
+                <a class="dropdown-item btn btn-warning" href="@notifications.html" id="notif_btn">Notification</a>
+              <div class="dropdown-divider "></div>
+                <a class="dropdown-item btn btn-warning button" id="psw_btn" href="change_psw.html" >change password</a>
+                <div class="dropdown-divider "></div>
+                <a class="dropdown-item btn btn-warning" id="logout_btn">Logout</a>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- End of nav bar -->
+
+<br><br>
+<h1 style="color:white;">Your Valuable Feedback Is Highly Appreciated</h1>
+<h1 style="color:white;">Please Rate Your Farmer According To Your Experience</h1>
+
+
+
+  <div class="container" style="margin-top:10vh;">
+      
+    <button class="btn btn-warning ff " id="B1" onclick="poc(B1)" style="margin-top:2vh;">BAD</button>
+    <button class="btn btn-warning ff " id="B2" onclick="poc(B2)" style="margin-left:2vw;margin-top:2vh;" >SATISFACTORY</button>
+    <button class="btn btn-warning ff " id="B3" onclick="poc(B3)" style="margin-left:2vw;margin-top:2vh;">OK</button>
+    <button class="btn btn-warning ff " id="B4" onclick="poc(B4)" style="margin-left:2vw;margin-top:2vh;">GOOD</button>
+    <button class="btn btn-warning ff" id="B5" onclick="poc(B5)" style="margin-left:2vw;margin-top:2vh;">EXCELLENT</button>
+    
+  </div>
+
+<img src="images/1.jpg" id="i1" height="60vh" width="60vw" style="display:none;">
+<img src="images/2.jpg" id="i2" height="60vh" width="60vw" style="display:none;">
+<img src="images/3.jpg" id="i3" height="60vh" width="60vw" style="display:none;">
+<img src="images/4.jpg" id="i4" height="60vh" width="60vw" style="display:none;">
+<img src="images/5.jpg" id="i5" height="60vh" width="60vw" style="display:none;">
+
+<p style="color:yellow;font-size:6vh;"></p>
+
+</center>
+</body>
+<!--The bootstrap js scripts  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="feedback.js"></script>
+
+</html>

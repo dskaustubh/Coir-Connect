@@ -1,0 +1,164 @@
+   body{
+  /* background-color:#EDEF9E; */
+  background-color:#36622b;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+* {box-sizing: border-box}
+
+.outer{
+	height:100%;
+	width:auto;
+}
+
+.main{
+  height: 111vh;
+  width: 46.8vw;
+  align:center;
+  font-family: Gill Sans Extrabold, sans-serif;
+}
+
+a:link,a:visited{
+  text-decoration: none;
+  color: #00e600;
+}
+
+a:hover{
+	opacity:0.6;
+}
+
+
+
+.header{
+  height: 14vh;
+  width: 46.8vw;
+  background-color: #fbfad3;
+  position:fixed;
+  top: 0;
+  left:26.07vw;
+  //bottom:0;
+  z-index:10;
+
+}
+
+.logo{
+  padding-top: 0.4625vh;
+  height: 8.325vh;
+  width: 10.4vw;
+  float: left;
+}
+
+.heading{
+  padding-top: 0.925vh;
+  height: 8.325vh;
+  width: 15.6vw;
+  font-family:Impact, Charcoal, sans-serif;
+  float: left;
+  text-align:right;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+
+/* Extra styles for the cancel button */
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+.up{
+	postion:relative;
+	postion:fixed;
+	bottom:50vh;
+	right:20vw;
+	height:10vh;
+	width:5vw;
+	float:right;
+}
+.menu{
+  height: 4.625vh;
+  width: 46.8vw;
+  opacity:0.8;
+}
+
+.content{
+
+  //height: 87.875vh;
+  //height: 106vh;
+  height:130vh;
+  width: 46.8vw;
+  background-color: #c6e377;
+  position: relative;
+  top:15vh;
+}
+.message{
+
+  width: 100%;
+  height: 50vh;
+  resize:none;
+  margin-top: 10px;
+
+}
+.button_example{
+border:1px solid #7d99ca; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #A5B8DA; background-image: -webkit-gradient(linear, left top, left bottom, from(#A5B8DA), to(#7089B3));
+ background-image: -webkit-linear-gradient(top, #A5B8DA, #7089B3);
+ background-image: -moz-linear-gradient(top, #A5B8DA, #7089B3);
+ background-image: -ms-linear-gradient(top, #A5B8DA, #7089B3);
+ background-image: -o-linear-gradient(top, #A5B8DA, #7089B3);
+ background-image: linear-gradient(to bottom, #A5B8DA, #7089B3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#A5B8DA, endColorstr=#7089B3);
+}
+
+.button_example:hover{
+ border:1px solid #5d7fbc;
+ background-color: #819bcb; background-image: -webkit-gradient(linear, left top, left bottom, from(#819bcb), to(#536f9d));
+ background-image: -webkit-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -moz-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -ms-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -o-linear-gradient(top, #819bcb, #536f9d);
+ background-image: linear-gradient(to bottom, #819bcb, #536f9d);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#819bcb, endColorstr=#536f9d);
+}
+
+.footer{
+  height: 9.25vh;
+  width: 46.8vw;
+  background-color: #729d39;
+  position: relative;
+  top:16.5vh;
+}
